@@ -34,10 +34,10 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyle.headingMd}>
-        <p>ツンデツンデ / Stakataka</p>
+        <p>ツンデツンデ / UB:LAY</p>
       </section>
 
-      <section>
+      <section className={`${utilStyle.headingMd} ${utilStyle.padding1px}`}>
         <h2>📝エンジニアのブログ</h2>
         <div className={styles.grid}>
           {allPostsData.map(({ id, title, date, thumbnail }) => (
